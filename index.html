@@ -4,9 +4,10 @@ as mudancas ficam automaticas, basta salvar no vscolde e ja muda na pagina />
 <html> 
     <head> <!fica informações pre carregadas antees de mostrar para o usuario />
         <title> Meu primeiro html </title>
-    </head>
+           </head>
     <body> <! o que o usuário ira ver />
         <h1> <i> Meu primeiro<strong> HTML!</i></strong></h1>
+        <hr/>
         <p><input type="text"/></p>
         <img   src="imagens/foto de tigre.jpg" /> 
         <blockquote> 
@@ -26,14 +27,17 @@ as mudancas ficam automaticas, basta salvar no vscolde e ja muda na pagina />
                     <li>
                         <a href="subpagina-index.html">2pagina</a>
                     </li>
-                    <li>lista 3.1</li>
+                    <li id="origem"><a href="#ancora1">item 3</a></li>
                     <li>lista 3.1</li>
                 </ol>
-        </ol>
+        </ol> <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
         <Ul><!lista nao ordenada, por marcadores />
             <li>item 1 </li>
             <li>item 2 </li>
-            <li>item 3 </li>
+            <li id="ancora1">item 3 </li>
+            <small> <a href="#origem">(voltar)</a></small>
+
 
         </Ul>
         
@@ -56,9 +60,17 @@ as mudancas ficam automaticas, basta salvar no vscolde e ja muda na pagina />
  <! src"" - esse atributo é epecifico da tag img, que serve para colocar o endereço 
  da imagem dentro das aspas/>
  <! href="" - atributo especifico da tag a - usada para colocar link, porem o site abre 
- na mesma aba /> 
+ na mesma aba, pagina externa/> 
  <! target="" - segundo atributo da tag a - com o valor de _blank abre em outra aba 
- ou com o valor self que abre o link nele mesmo, comportamento padrao /> 
+ ou com o valor self que abre o link nele mesmo, comportamento padrao, para o mesmo site /> 
+ <! coloca um id em determinado elemento da pagina e chama ele por link, usando #  mais o 
+ nomo de id, o link ira direcionar para o elemento determinado dentro da pagina, esse
+ procedimeento é chamado de ancora.
+ E é bom coloar um link de voltar para origem, utilizando  outro link - voltado para
+  onde estava, facilitando a navegacao do  usuário, 
+ fazendo o mesmo procedimeto, colocando um id na origem  e chamando por link, utilizando
+ um link juntamente com #/>
+ 
  <! title="" tb usado como atributo da tag a - serve para colocar um balao informartivo 
  quando passar o usuario passar o curso sobre o link/>
  
